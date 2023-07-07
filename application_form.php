@@ -39,7 +39,7 @@
 <body>
 
 <!-- banner -->
-<div class="inner-page-banner" id="home"> 	   
+<div class="inner-page-banner" id="home">
 	<!--Header-->
 	<header>
 		<div class="container agile-banner_nav">
@@ -85,7 +85,7 @@
 	</header>
 	<!--Header-->
 </div>
-<!-- //banner --> 
+<!-- //banner -->
 
 <section class="contact py-5">
 	<div class="container">
@@ -152,7 +152,7 @@
 </footer>
 <!-- footer -->
 
-<!-- js-scripts -->		
+<!-- js-scripts -->
 
 	<!-- js -->
 	<script type="text/javascript" src="web_home/js/jquery-2.2.3.min.js"></script>
@@ -187,7 +187,7 @@
 				containerID: 'toTop', // fading element id
 				containerHoverID: 'toTopHover', // fading element hover id
 				scrollSpeed: 1200,
-				easingType: 'linear' 
+				easingType: 'linear'
 				};
 			*/
 								
@@ -206,34 +206,35 @@
 <?php
    //echo 'Hello';
    
-   if(isset($_POST['submit'])){
+   if (isset($_POST['submit'])) {
      $roll = $_SESSION['roll'];
      $password = $_POST['pwd'];
      $hostel = $_GET['id'];
      $message = $_POST['Message'];
 
-     /*echo "<script type='text/javascript'>alert('<?php echo $roll ?>')</script>";*/
+     /*
+	 echo "<script type='text/javascript'>alert('<?php echo $roll ?>')</script>";
+	 */
      $query_imp = "SELECT * FROM Student WHERE Student_id = '$roll'";
      $result_imp = mysqli_query($conn,$query_imp);
      $row_imp = mysqli_fetch_assoc($result_imp);
      $room_id = $row_imp['Room_id'];
      /*echo "<script type='text/javascript'>alert('<?php echo $room_id ?>')</script>";*/
-     if(is_null($room_id)){
+     if (is_null($room_id)) {
      
      $query_imp2 = "SELECT * FROM Application WHERE Student_id = '$roll'";
      $result_imp2 = mysqli_query($conn,$query_imp2);
-     if(mysqli_num_rows($result_imp2)==0){
+     if (mysqli_num_rows($result_imp2)==0) {
 
 
      $query = "SELECT * FROM Student WHERE Student_id = '$roll'";
      $result = mysqli_query($conn,$query);
-     if($row = mysqli_fetch_assoc($result)){
+     if ($row = mysqli_fetch_assoc($result)) {
      	$pwdCheck = password_verify($password, $row['Pwd']);
      	
-        if($pwdCheck == false){
+        if ($pwdCheck == false){
             echo "<script type='text/javascript'>alert('Incorrect Password!!')</script>";
-      }
-      else if($pwdCheck == true) {
+      }elseif ($pwdCheck == true) {
 
       	    $query2 = "SELECT * FROM Hostel WHERE Hostel_name = '$hostel'";
       	    $result2 = mysqli_query($conn,$query2);
@@ -242,20 +243,18 @@
             $query3 = "INSERT INTO Application (Student_id,Hostel_id,Application_status,Message) VALUES ('$roll','$hostel_id',true,'$message')";
             $result3 = mysqli_query($conn,$query3);
 
-            if($result3){
+            if ($result3) {
             	 echo "<script type='text/javascript'>alert('Application sent successfully')</script>";
             }
       }
      }
 
-     }
-     else{
+     }else {
      	echo "<script type='text/javascript'>alert('You have Already applied for a Room')</script>";
      }
     
-     }
-     else{
-          echo "<script type='text/javascript'>alert('You have Already been alloted a Room')</script>";   
+     }else {
+          echo "<script type='text/javascript'>alert('You have Already been alloted a Room')</script>";
       }
 
 
