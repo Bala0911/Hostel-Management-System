@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>HOSTEL MANAGEMENT SYATEM</title>
+    <title>HOSTEL MGMT SYS</title>
     <!-- meta tags -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
