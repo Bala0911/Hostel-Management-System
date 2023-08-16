@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>HOSTEL MGMT SYS</title>
+    <title>HOSTEL MANAGEMENT</title>
     <!-- meta tags -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -25,7 +25,7 @@
 
 
 <body>
-    <h1>Hostel Room Allocation Process</h1>
+    <h1>Hostel Room Management</h1>
     <div class=" w3l-login-form">
         <h2>Student Login</h2>
         <form action="includes/login.inc.php" method="POST">
