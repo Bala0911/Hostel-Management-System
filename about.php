@@ -291,7 +291,7 @@
 	</script>
 	<!-- //here ends scrolling icon -->
 	<!-- start-smoth-scrolling -->
-	
+<!-- 	 -->
 <!-- //js-scripts -->
 
 </body>
