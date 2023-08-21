@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<!--12345-->
 <head>
     <title>HMS</title>
     <!-- meta tags -->
@@ -22,7 +22,6 @@
     <!-- /google fonts-->
 
 </head>
-<!--New-Contyext  -->
 
 <body>
     <h1>Hostel Room Allocation System</h1>
