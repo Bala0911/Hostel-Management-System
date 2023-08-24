@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- 	gu -->
     <title>HOSTEL MANAGEMENT</title>
     <!-- meta tags -->
     <meta charset="UTF-8" />
