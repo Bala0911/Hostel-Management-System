@@ -6,7 +6,6 @@
 -->
 
 <?php
-// hello
  require 'includes/config.inc.php';
 ?>
 <!DOCTYPE html>
