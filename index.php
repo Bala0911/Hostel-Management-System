@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- Test -->
 <head>
     <title>HOSTEL MANAGEMENT</title>
     <!-- meta tags -->
@@ -22,8 +21,6 @@
     <!-- /google fonts-->
 
 </head>
-
-<!-- new -->
 <body>
     <h1>Hostel Room Management</h1>
     <div class=" w3l-login-form">

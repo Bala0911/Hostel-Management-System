@@ -9,7 +9,7 @@
 <html lang="en">
 <head>
 <title> Intrend Interior Category Flat Bootstrap Responsive Website Template | About : W3layouts</title>
-	
+<!-- Hello-->
 	<!-- Meta tag Keywords -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="utf-8">
@@ -292,7 +292,7 @@
 	</script>
 	<!-- //here ends scrolling icon -->
 	<!-- start-smoth-scrolling -->
-	
+<!-- 	 -->
 <!-- //js-scripts -->
 
 </body>

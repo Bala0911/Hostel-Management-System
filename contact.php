@@ -6,7 +6,6 @@
 -->
 
 <?php
-// khsdi
  require 'includes/config.inc.php';
 ?>
 <!DOCTYPE html>
