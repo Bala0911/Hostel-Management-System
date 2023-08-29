@@ -1,26 +1,12 @@
 pipeline{
     agent any
     environment{
-        staging_server="52.15.119.205"
+        staging_server="172.31.33.248"
     }
     stages{
         stage('SCM Checkout') {
             steps {
                 git credentialsId: 'github-token', branch: 'master', url: 'https://github.com/Bala0911/Hostel-Management-System.git'   
-            }
-        }
-        stage('sonarqube analysis') {
-            steps {
-                withSonarQubeEnv('sonar-server') {
-                    script {
-                        def scannerHome = tool 'SonarQube Scanner'
-                        withEnv(["PATH+SONARSCANNER=${scannerHome}/bin"]) {
-                            sh 'sonar-scanner \
-                                -Dsonar.projectKey=Hostel-Management \
-                                -Dsonar.sources=${WORKSPACE}'
-                        }
-                    }
-                }
             }
         }
         stage('Deploy to Dev Server'){

@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <title>HMS</title>
+<!-- 	gu -->
+    <title>HOSTEL MANAGEMENT</title>
     <!-- meta tags -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -22,10 +22,8 @@
     <!-- /google fonts-->
 
 </head>
-
-
 <body>
-    <h1>Hostel Room Allocation System</h1>
+    <h1>Hostel Room Management</h1>
     <div class=" w3l-login-form">
         <h2>Student Login</h2>
         <form action="includes/login.inc.php" method="POST">
@@ -54,7 +52,7 @@
         <p class=" w3l-register-p">Don't have an account?<a href="signup.php" class="register"> Sign up</a></p>
     </div>
     <footer>
-        <p class="copyright-agileinfo"> &copy; 2018 DBMS Project. All Rights Reserved | Design by <a href="https://www.linkedin.com/in/bharat-reddy/">Bharat-Prajwal-Rakesh</a></p>
+        <p class="copyright-agileinfo"> &copy; 2018 DBMS Project. All Rights Reserved System | Design by <a href="https://www.linkedin.com/in/bharat-reddy/">Bharat-Prajwal-Rakesh</a></p>
     </footer>
 
 </body>
