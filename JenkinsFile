@@ -44,3 +44,30 @@ pipeline{
     //     }
     }
 }
+
+
+
+pipeline {
+    agent any
+    environment{
+        staging_server="172.31.4.102"
+        // deploy_server="172.31.45.114"
+    }
+    stages {
+        stage ('Checkout') {
+            steps {
+                // checkout scmGit(branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[refspec: 'refs/tags/v1', url: 'https://github.com/bala-09/Hostel-Management-System.git']])
+                git branch: 'main', credentialsId: 'aws-codecommit', url: 'https://git-codecommit.ap-south-1.amazonaws.com/v1/repos/Repo'
+            }
+        }
+        stage ('Depoy to server') {
+            input {
+                message "Do you proceed?"
+            }
+            steps {
+                sh 'rsync -avzh * --delete --exclude=.git --exclude=.gitignore --exclude=.gitattributes --exclude=README.md . ubuntu@${staging_server}:/var/www/html/'
+            }
+        }
+        
+    }
+}
