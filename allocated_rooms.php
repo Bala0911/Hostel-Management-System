@@ -2,6 +2,7 @@
   require 'includes/config.inc.php';
 // hello  
 ?>
+<!-- hjchkj -->
 <!-- text -->
 <!DOCTYPE html>
 <html lang="en">
