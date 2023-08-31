@@ -4,7 +4,6 @@
 	License: Creative Commons Attribution 3.0 Unported
 	License URL: http://creativecommons.org/licenses/by/3.0/
 -->
-<!-- Hello new `123-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
