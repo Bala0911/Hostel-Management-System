@@ -1,6 +1,6 @@
 <?php
   require 'includes/config.inc.php';
-  
+// hello  
 ?>
 <!-- text -->
 <!DOCTYPE html>
