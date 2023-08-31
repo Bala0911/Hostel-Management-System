@@ -2,7 +2,7 @@
   require 'includes/config.inc.php';
   
 ?>
-
+<!-- text -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
