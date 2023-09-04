@@ -1,10 +1,7 @@
 <?php
   require 'includes/config.inc.php';
-// hello  
+// hello 
 ?>
-<!-- hjchkj -->
-<!-- text -->
-<!-- hnhjuesd -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
