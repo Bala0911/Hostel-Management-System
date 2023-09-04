@@ -1,6 +1,7 @@
 <?php
   require 'includes/config.inc.php';
-// hello  
+// hello
+// new change  
 ?>
 <!-- hjchkj -->
 <!-- text -->
