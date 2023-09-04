@@ -3,9 +3,6 @@
 // hello
 // new change  
 ?>
-<!-- hjchkj -->
-<!-- text -->
-<!-- hnhjuesd -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
