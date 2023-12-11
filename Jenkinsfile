@@ -3,6 +3,7 @@ pipeline{
     environment{
         staging_server="172.31.33.248"
     }
+    // 
     stages{
         stage('SCM Checkout') {
             steps {
